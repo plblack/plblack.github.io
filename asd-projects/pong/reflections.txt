@@ -1,0 +1,9 @@
+Describe the gameplay. 2 player hit a ball back and forth horizontally until one player misses the ball. Everytime the player misses the ball the other player recives a point, there is usually a score limit.
+What are the conditions when the game begins? Both players start with 0 points.
+Does the game have an end? If so, what are the conditions for when it ends? Yes, it has an end when one player reaches a certain score.
+What are the visual game components? For example, in Bouncing Box, the game components were the board and the box. A ball, two vertical lines(the players), and the board.
+Which will be static? The board
+Which will be animated? The ball and the players(vertical lines) will be animated.
+What data will you need to manage each game component? SpeedX, speedY, positionX, positionY, and points. 
+What events will occur in this game? (timer events, keyboard events, clicking events?) Keyboard events and point events
+How do those events affect the data of the program? Whenever the ball goes past the player the other player will gain a point. The position of the ball is reset. 
