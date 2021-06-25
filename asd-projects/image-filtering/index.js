@@ -1,19 +1,12 @@
 // This is a small program. There are only two sections. This first section is what runs
 // as soon as the page loads and is where you should call your functions.
 $(document).ready(function(){
-    const $display = $('#display');
-
+    const $display = $('#display');    
+            
+        
+    
     // TODO: Call your apply function(s) here
     applyFilter();
-    var rgbString = [150, 155, 155];
-    function arrayToString(array){
-        for (var i =0; i < array.length; i++){
-            str += array[i]
-        }
-        return str;
-        }
-    var rgbNumbers = rgbStringToArray(rgbString);
-    rgbString = rgbArrayToString(rgbNumbers);
     render($display, image);
 });
 
@@ -22,8 +15,14 @@ $(document).ready(function(){
 /////////////////////////////////////////////////////////
 
 // TODO 1 & 3: Create the applyFilter function here
-function applyFilter(array){
-
+function applyFilter(){  for (var r = 0; r < image.length; r++) {
+    for (var c = 0; c < image[r].length; c++) {
+        var color = image[r][c];
+    }
+    }
+    rgbString = "rgb(150, 150, 150)"
+    rgbNumbers = rgbStringToArray(rgbString);
+    rgbString = rgbArrayToString(rgbNumbers);
 };
 // TODO 5: Create the applyFilterNoBackground function
 
