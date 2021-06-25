@@ -4,10 +4,16 @@ $(document).ready(function(){
     const $display = $('#display');
 
     // TODO: Call your apply function(s) here
-    var rgbString = ["rgb(150, 150, 150)",];
+    applyFilter();
+    var rgbString = [150, 155, 155];
+    function arrayToString(array){
+        for (var i =0; i < array.length; i++){
+            str += array[i]
+        }
+        return str;
+        }
     var rgbNumbers = rgbStringToArray(rgbString);
-    var rgbString = rgbArrayToString(rgbNumbers);
-    console.log(rgbString);
+    rgbString = rgbArrayToString(rgbNumbers);
     render($display, image);
 });
 
@@ -16,7 +22,9 @@ $(document).ready(function(){
 /////////////////////////////////////////////////////////
 
 // TODO 1 & 3: Create the applyFilter function here
+function applyFilter(array){
 
+};
 // TODO 5: Create the applyFilterNoBackground function
 
 

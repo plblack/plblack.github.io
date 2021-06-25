@@ -50,6 +50,8 @@ function runProgram(){
   /* 
   Called in response to events.
   */
+
+  
   function handleKeyDown(event) {
     if (event.which === KEY.DOWN){
       paddleLeft.speedY = 5;
@@ -66,7 +68,6 @@ function runProgram(){
         paddleLeft.speedY = 0;
       }
     }
-
   ////////////////////////////////////////////////////////////////////////////////
   ////////////////////////// HELPER FUNCTIONS ////////////////////////////////////
   ////////////////////////////////////////////////////////////////////////////////
@@ -74,9 +75,10 @@ function runProgram(){
     paddleLeft.y += paddleLeft.speedY;
   }
   function redrawGameItem(){
-    paddleLeft.css("left", X);
-    paddleLeft.css("top", Y);
+    $("#paddleLeft").css("left", X);
+    $("#paddleLeft").css("top", Y);
   }
+  
   function endGame() {
     // stop the interval timer
     clearInterval(interval);
@@ -84,5 +86,4 @@ function runProgram(){
     // turn off event handlers
     $(document).off();
   }
-  
-}
+}  
