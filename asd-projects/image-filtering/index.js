@@ -15,14 +15,16 @@ $(document).ready(function(){
 /////////////////////////////////////////////////////////
 
 // TODO 1 & 3: Create the applyFilter function here
-function applyFilter(){  for (var r = 0; r < image.length; r++) {
+function applyFilter(){  
+    for (var r = 0; r < image.length; r++) {
     for (var c = 0; c < image[r].length; c++) {
         var color = image[r][c];
-    }
-    }
-    rgbString = "rgb(150, 150, 150)"
-    rgbNumbers = rgbStringToArray(rgbString);
-    rgbString = rgbArrayToString(rgbNumbers);
+        rgbString = color
+        rgbNumbers = rgbStringToArray(rgbString);
+        rgbNumbers[RED] = 255
+        rgbString = rgbArrayToString(rgbNumbers);
+    }   
+}
 };
 // TODO 5: Create the applyFilterNoBackground function
 
