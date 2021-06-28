@@ -33,7 +33,7 @@ function applyFilter(filterFunction){
 function applyFilterNoBackground(filterFunction){
     for (var r = 0; r < image.length; r++) {
         for (var c = 0; c < image[r].length; c++) {
-            if(image[0] = image[r][c]){
+            if(image[0][0] == image[r][c]){
 
             }
             else{
@@ -53,10 +53,14 @@ function reddify (rgbNumbers){
     rgbNumbers[RED] = 255 
 };
 function decreaseBlue(rgbNumbers){
+    if(rgbNumbers[BLUE] - 30 >= 0){
     rgbNumbers[BLUE] = rgbNumbers[BLUE] - 30;
+    }
 };
 function increaseGreenByBlue(rgbNumbers){
+    if(rgbNumbers[GREEN] + rgbNumbers[BLUE] <= 255){
     rgbNumbers[GREEN] = rgbNumbers[GREEN] + rgbNumbers[BLUE]
+    }
 };
 
 // CHALLENGE code goes below here
