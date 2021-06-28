@@ -53,14 +53,10 @@ function reddify (rgbNumbers){
     rgbNumbers[RED] = 255 
 };
 function decreaseBlue(rgbNumbers){
-    if(rgbNumbers[BLUE] - 30 >= 0){
     rgbNumbers[BLUE] = rgbNumbers[BLUE] - 30;
-    }
 };
 function increaseGreenByBlue(rgbNumbers){
-    if(rgbNumbers[GREEN] + rgbNumbers[BLUE] <= 255){
     rgbNumbers[GREEN] = rgbNumbers[GREEN] + rgbNumbers[BLUE]
-    }
 };
 
 // CHALLENGE code goes below here
