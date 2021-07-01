@@ -2,10 +2,23 @@
 body {
   background-color: white;
 }
-
+h1{
+  left:40px;
+  font-size: 50px;
+  color: white;
+  position: absolute;
+}
+h2{
+  left:380px;
+  font-size: 50px;
+  color:white;
+  position: absolute;
+}
 #board {
   width: 440px;
   height: 440px;
+  top: 0px;
+  left: 0px;
   border: 1px solid white;
   background-color: black;
   position: relative;
